@@ -1,0 +1,30 @@
+{
+  "name": "math-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwintantawi/dicoding_MBEDE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwintantawi/dicoding_MBEDE/issues"
+  },
+  "homepage": "https://github.com/edwintantawi/dicoding_MBEDE#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1"
+  }
+}

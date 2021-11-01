@@ -27,7 +27,7 @@ const MathBasic = {
     const [a, b] = this._validateArgs(args);
     return a * b;
   },
-  devide(...args) {
+  divide(...args) {
     const [a, b] = this._validateArgs(args);
     return a / b;
   },

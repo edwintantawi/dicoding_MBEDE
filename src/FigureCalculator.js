@@ -43,7 +43,7 @@ class FigureCalculator {
   calculateTriangleArea(...args) {
     const [base, height] = this._validateArgs(args, 2);
 
-    return this._mathBasic.devide(this._mathBasic.multiply(base, height), 2);
+    return this._mathBasic.divide(this._mathBasic.multiply(base, height), 2);
   }
 }
 

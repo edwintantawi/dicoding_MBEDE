@@ -1,15 +1,15 @@
 const MathBasic = require('./MathBasic');
 
 describe('A Math Basic', () => {
-  it('should contains add, subtract, multiply, and devide function', () => {
+  it('should contains add, subtract, multiply, and divide function', () => {
     expect(MathBasic).toHaveProperty('add');
     expect(MathBasic).toHaveProperty('subtract');
     expect(MathBasic).toHaveProperty('multiply');
-    expect(MathBasic).toHaveProperty('devide');
+    expect(MathBasic).toHaveProperty('divide');
     expect(MathBasic.add).toBeInstanceOf(Function);
     expect(MathBasic.subtract).toBeInstanceOf(Function);
     expect(MathBasic.multiply).toBeInstanceOf(Function);
-    expect(MathBasic.devide).toBeInstanceOf(Function);
+    expect(MathBasic.divide).toBeInstanceOf(Function);
   });
 
   describe('A add function', () => {
@@ -75,24 +75,24 @@ describe('A Math Basic', () => {
     });
   });
 
-  describe('A devide function', () => {
+  describe('A divide function', () => {
     it('should throw error when not given 2 parameters', () => {
-      expect(() => MathBasic.devide()).toThrowError();
-      expect(() => MathBasic.devide(1)).toThrowError();
-      expect(() => MathBasic.devide(1, 2, 3)).toThrowError();
-      expect(() => MathBasic.devide(1, 2, 3, 4)).toThrowError();
+      expect(() => MathBasic.divide()).toThrowError();
+      expect(() => MathBasic.divide(1)).toThrowError();
+      expect(() => MathBasic.divide(1, 2, 3)).toThrowError();
+      expect(() => MathBasic.divide(1, 2, 3, 4)).toThrowError();
     });
 
     it('should throw error when given non-number parameters', () => {
-      expect(() => MathBasic.devide('1', '2')).toThrowError();
-      expect(() => MathBasic.devide(true, {})).toThrowError();
-      expect(() => MathBasic.devide(null, false)).toThrowError();
+      expect(() => MathBasic.divide('1', '2')).toThrowError();
+      expect(() => MathBasic.divide(true, {})).toThrowError();
+      expect(() => MathBasic.divide(null, false)).toThrowError();
     });
 
     it('should return a * b when given two parameters', () => {
-      expect(MathBasic.devide(1, 2)).toEqual(0.5);
-      expect(MathBasic.devide(5, 4)).toEqual(1.25);
-      expect(MathBasic.devide(12, 6)).toEqual(2);
+      expect(MathBasic.divide(1, 2)).toEqual(0.5);
+      expect(MathBasic.divide(5, 4)).toEqual(1.25);
+      expect(MathBasic.divide(12, 6)).toEqual(2);
     });
   });
 });

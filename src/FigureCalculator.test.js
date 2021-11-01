@@ -192,7 +192,7 @@ describe('A Figure Calculator', () => {
       const base = 10;
       const height = 15;
       const spyMultiply = jest.spyOn(MathBasic, 'multiply');
-      const spyDevide = jest.spyOn(MathBasic, 'devide');
+      const spydivide = jest.spyOn(MathBasic, 'divide');
       const figureCalculator = new FigureCalculator(MathBasic);
 
       // action
@@ -201,7 +201,7 @@ describe('A Figure Calculator', () => {
       // assert
       expect(result).toEqual(75);
       expect(spyMultiply).toHaveBeenCalledWith(base, height);
-      expect(spyDevide).toHaveBeenCalledWith(150, 2);
+      expect(spydivide).toHaveBeenCalledWith(150, 2);
     });
   });
 });
